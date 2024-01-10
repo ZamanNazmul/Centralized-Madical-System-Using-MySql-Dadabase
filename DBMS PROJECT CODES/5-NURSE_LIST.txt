@@ -1,0 +1,177 @@
+CREATE TABLE NURSE_LIST(
+MID INT,
+MEDICAL_NAME VARCHAR2(100),
+DEPARTMENT VARCHAR2(100),
+NURSE_ID VARCHAR2(100),
+NURSE_REG_ID VARCHAR2(100),
+NURSE_NAME VARCHAR2(100),
+POSITION VARCHAR2(100),
+GENDER VARCHAR2(100),
+BLOOD_GROUP VARCHAR2(100),
+DATE_OF_JOINING VARCHAR2(100),
+SALARY INT,
+CONTACT VARCHAR2(100),
+ADDRESS VARCHAR2(100),
+PRIMARY KEY(NURSE_ID),
+FOREIGN KEY (MID) REFERENCES MEDICAL_DETAILS(MID)
+);
+
+
+DESCRIBE NURSE_LIST;
+
+
+INSERT INTO NURSE_LIST VALUES('1001','Popular Hospital','D110','N501','BN701','Mariyam','Head Nurse','Female','A+','1/1/2011',50000,'1910401301','Mohammadpur');
+
+
+INSERT INTO NURSE_LIST VALUES('1001','Popular Hospital','D111','N502','BN702','Maliha','Senior Nurse','Female','B+','1/2/2012',40000,'1910402302','Dhanmondi');
+
+
+
+INSERT INTO NURSE_LIST VALUES('1001','Popular Hospital','D112','N503','BN703','Sadia','Senior Nurse','Female','A-','1/3/2013',40000,'1910403303','Maniknagar');
+
+
+INSERT INTO NURSE_LIST VALUES('1001','Popular Hospital','D113','N504','BN704','Sabiha','Junior Nurse','Female','B-','1/4/2014',30000,'1910404304','Khilgaon');
+
+
+INSERT INTO NURSE_LIST VALUES('1001','Popular Hospital','D114','N505','BN705','Hasina','Junior Nurse','Female','O+','1/5/2015',30000,'1910405305','Banasree');
+
+
+
+INSERT INTO NURSE_LIST VALUES('1002','LABAID Hospital','D120','N506','BN706','Lubna','Head Nurse','Female','AB+','1/1/2005',55000,'1910407307','Jurain');
+
+
+INSERT INTO NURSE_LIST VALUES('1002','LABAID Hospital','D121','N507','BN707','Nayema','Senior Nurse','Female','AB-','1/2/2006',45000,'1910408308','Baridhara');
+
+
+INSERT INTO NURSE_LIST VALUES('1002','LABAID Hospital','D122','N508','BN708','Lamia','Senior Nurse','Female','A-','1/3/2007',45000,'1910409309','Badda');
+
+
+INSERT INTO NURSE_LIST VALUES('1002','LABAID Hospital','D123','N509','BN709','Tazrin','Junior Nurse','Female','B-','1/4/2008',35000,'1910410310','Nodda');
+
+
+INSERT INTO NURSE_LIST VALUES('1002','LABAID Hospital','D124','N510','BN710','Lina','Junior Nurse','Female','O-','1/5/2009',35000,'1910411311','Uttara');
+
+
+
+INSERT INTO NURSE_LIST VALUES('1003','BRB Hospital','D134','N511','BN711','Muna','Head Nurse','Female','AB+','1/1/2016',58000,'1910413313','Pallabi');
+
+
+INSERT INTO NURSE_LIST VALUES('1003','BRB Hospital','D135','N512','BN712','Ayesha','Senior Nurse','Female','O+','1/2/2017',48000,'1910413314','Gulshan');
+
+
+INSERT INTO NURSE_LIST VALUES('1003','BRB Hospital','D136','N513','BN713','Nusrat','Senior Nurse','Female','B+','1/3/2018',48000,'1910415315','Tejgaon');
+
+
+INSERT INTO NURSE_LIST VALUES('1003','BRB Hospital','D137','N514','BN714','Misha','Junior Nurse','Female','A+','1/4/2019',38000,'1910416316','Malibag');
+
+
+INSERT INTO NURSE_LIST VALUES('1003','BRB Hospital','D138','N515','BN715','Mishu','Junior Nurse','Female','B+','1/5/2020',38000,'1910417317','Farmgate');
+
+
+
+INSERT INTO NURSE_LIST VALUES('1004','Square Hospital','D142','N516','BN716','Marufa','Head Nurse','Female','A+','1/7/2021',62000,'1910419319','Rayerbag');
+
+
+
+
+INSERT INTO NURSE_LIST VALUES('1004','Square Hospital','D144','N518','BN718','Farzana','Senior Nurse','Female','AB+','1/9/2021',60000,'1910421321','Shyamoli');
+
+
+INSERT INTO NURSE_LIST VALUES('1004','Square Hospital','D145','N519','BN719','Sharmin','Junior Nurse','Female','A+','1/10/2021',42000,'1910422322','Mugda');
+
+
+INSERT INTO NURSE_LIST VALUES('1004','Square Hospital','D146','N520','BN720','Shila','Junior Nurse','Female','B+','1/11/2021',42000,'1910423323','Hatrijheel');
+
+
+INSERT INTO NURSE_LIST VALUES('1005','IBN SINA','D151','N521','BN721','Nishat','Head Nurse','Female','B-','1/3/2013',48000,'1910425325','Agargaon ');
+
+
+
+INSERT INTO NURSE_LIST VALUES('1005','IBN SINA','D152','N522','BN722','Sanjida','Senior Nurse','Female','O+','1/4/2014',45000,'1910426326','Mohammadpur');
+
+
+INSERT INTO NURSE_LIST VALUES('1005','IBN SINA','D153','N523','BN723','Priyanka','Senior Nurse','Female','O-','1/5/2015',45000,'1910427327','Khilgaon');
+
+
+INSERT INTO NURSE_LIST VALUES('1005','IBN SINA','D154','N524','BN724','Zabin','Junior Nurse','Female','AB+','1/6/2016',35000,'1910428328','Bashundhara');
+
+
+
+INSERT INTO NURSE_LIST VALUES('1005','IBN SINA','D155','N525','BN725','Zerin','Junior Nurse','Female','AB-','1/1/2005',35000,'1910429329','Khilkhet');
+
+
+INSERT INTO NURSE_LIST VALUES('1006','Health & Hope Hospital','D160','N526','BN726','Priya','Head Nurse','Female','B-','1/3/2007',48000,'1910431331','Mohammadpur');
+
+
+INSERT INTO NURSE_LIST VALUES('1006','Health & Hope Hospital','D161','N527','BN727','Lisa','Senior Nurse','Female','O-','1/4/2008',45000,'1910432332','Dhanmondi');
+
+
+INSERT INTO NURSE_LIST VALUES('1006','Health & Hope Hospital','D162','N528','BN728','Muntaha','SeniorNurse','Female','AB-','1/5/2009',45000,'1910433333','Maniknagar');
+
+
+INSERT INTO NURSE_LIST VALUES('1006','Health & Hope Hospital','D163','N529','BN729','Habiba','Junior Nurse','Female','AB+','1/6/2010',38000,'1910434334','Khilgaon');
+
+INSERT INTO NURSE_LIST VALUES('1006','Health & Hope Hospital','D164','N530','BN730','Humayra','Junior Nurse','Female','O+','1/1/2016',38000,'1910435335','Banasree');
+
+
+INSERT INTO NURSE_LIST VALUES('1007','Delta','D170','N531','BN731','Farin','Head Nurse','Female','A+','1/3/2018',46000,'1910437337','Jurain');
+
+INSERT INTO NURSE_LIST VALUES('1007','Delta','D171','N532','BN732','Fahima','Senior Nurse','Female','B+','1/3/2013',36000,'1910438338','Baridhara');
+
+
+INSERT INTO NURSE_LIST VALUES('1007','Delta','D172','N533','BN733','Fahmida','Senior Nurse','Female','B-','1/4/2014',36000,'1910439339','Badda');
+
+
+
+INSERT INTO NURSE_LIST VALUES('1007','Delta','D173','N534','BN734','Mukta','Junior Nurse','Female','A+','1/5/2015',30000,'1910440340','Nodda');
+
+
+INSERT INTO NURSE_LIST VALUES('1007','Delta','D174','N535','BN735','Suzana','Junior Nurse','Female','A-','1/6/2016',30000,'1910441341','Uttara');
+
+
+INSERT INTO NURSE_LIST VALUES('1008','Green Life Hospital','D181','N536','BN736','Alisha','Head Nurse','Female','O-','1/2/2006',52000,'1910443343','Pallabi');
+
+
+INSERT INTO NURSE_LIST VALUES('1008','Green Life Hospital','D182','N537','BN737','Asha','Senior Nurse','Female','AB-','1/3/2007',46000,'1910444344','Gulshan');
+
+
+INSERT INTO NURSE_LIST VALUES('1008','Green Life Hospital','D183','N538','BN738','Mina','Senior Nurse','Female','AB+','1/4/2008',46000,'1910445345','Tejgaon');
+
+
+INSERT INTO NURSE_LIST VALUES('1008','Green Life Hospital','D184','N539','BN739','Shila','Junior Nurse','Female','O+','1/3/2013',39000,'1910446346','Malibag');
+
+
+INSERT INTO NURSE_LIST VALUES('1008','Green Life Hospital','D185','N540','BN740','Tanzina','Junior Nurse','Female','B+','1/4/2014',39000,'1910447347','Farmgate');
+
+
+INSERT INTO NURSE_LIST VALUES('1009','Bangladesh Specialized Hospital','D191','N541','BN741','Maria','Head Nurse','Female','B+','1/6/2016',54000,'1910449349','Rayerbag');
+
+
+INSERT INTO NURSE_LIST VALUES('1009','Bangladesh Specialized Hospital','D192','N542','BN742','Farzana','Senior Nurse','Female','B-','1/3/2013',47000,'1910450350','Ramna');
+
+
+INSERT INTO NURSE_LIST VALUES('1009','Bangladesh Specialized Hospital','D193','N543','BN743','Muna','Senior Nurse','Female','B-','1/4/2014',47000,'1910451351','Shyamoli');
+
+
+INSERT INTO NURSE_LIST VALUES('1009','Bangladesh Specialized Hospital','D194','N544','BN744','Lisa','Junior Nurse','Female','O-','1/5/2015',40000,'1910452352','Mugda');
+
+
+INSERT INTO NURSE_LIST VALUES('1009','Bangladesh Specialized Hospital','D195','N545','BN745','Sanjida','Junior Nurse','Female','AB-','1/3/2018',40000,'1910453353','Hatrijheel');
+
+
+INSERT INTO NURSE_LIST VALUES('1010','Evercare Hospital','D201','N547','BN747','Shakila','Senior Nurse','Female','B+','1/5/2015',60000,'1910456356','Mohammadpur');
+
+
+
+INSERT INTO NURSE_LIST VALUES('1010','Evercare Hospital','D202','N548','BN748','Noushaba','Senior Nurse','Female','A+','1/6/2016',60000,'1910457357','Khilgaon');
+
+
+
+INSERT INTO NURSE_LIST VALUES('1010','Evercare Hospital','D203','N549','BN749','Noushin','Junior Nurse','Female','B+','1/1/2005',50000,'1910458358','Bashundhara');
+
+
+INSERT INTO NURSE_LIST VALUES('1010','Evercare Hospital','D204','N550','BN750','Humayra','Junior Nurse','Female','B-','1/3/2018',50000,'1910459359','Khilkhet');
+
+
+
+SELECT * FROM NURSE_LIST;
